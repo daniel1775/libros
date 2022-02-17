@@ -1,5 +1,13 @@
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
 .show{
-  display: block;
+  display: flex;
 }
 
 .hide{

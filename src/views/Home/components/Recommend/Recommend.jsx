@@ -25,6 +25,10 @@ const Recommend = () => {
       <div className={classes.Cards}>
         {data?.length && <Card data={data[0]}/>}
         {data?.length && <Card data={data[1]}/>}
+        {data?.length && <Card data={data[2]}/>}
+        {data?.length && <Card data={data[3]}/>}
+        {data?.length && <Card data={data[4]}/>}
+        {data?.length && <Card data={data[5]}/>}
       </div>
     </div>
   )

@@ -20,7 +20,7 @@ export default function Filter( props ){
   return(
     <div className={`${style.container} ${!showHome ? style.show : style.hide}`}>
       {data?.map(element => 
-        <Card key={element.id} data={data}/>)}
+        <Card key={element.id} data={element}/>)}
     </div>
   );
 }
