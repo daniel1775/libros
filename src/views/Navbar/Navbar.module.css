@@ -20,7 +20,6 @@
 
 .title{
   font-size: var(--textSize);
-  margin-left: 25px;
   font-family: 'Recursive', sans-serif;
 }
 
@@ -31,6 +30,7 @@
 
 .containerIcons{
   display: flex;
+  visibility: hidden;
 }
 
 .iconCart{

@@ -48,7 +48,7 @@ export default function Filter( props ){
     <div className={`${style.container} ${!showHome ? style.show : style.hide}`}>
       {band ? 
         <h1 className={style.title}>{filtered.toUpperCase()}</h1> : 
-        <p className={style.title}>Filtrado por: {searchText}</p>
+        <p className={style.title}>Filtrado por: "{searchText}"</p>
       }
       <div className={style.cards}>
         {data?.map((element, i) =>
