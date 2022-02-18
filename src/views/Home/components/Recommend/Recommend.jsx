@@ -4,7 +4,8 @@ import Card from '../../../Card/Card.jsx';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-const Recommend = () => {
+const Recommend = ( props ) => {
+  const { showHome } = props;
   const [ data, setData ] = useState([]);
 
   useEffect(() => {
@@ -17,7 +18,7 @@ const Recommend = () => {
   }, []);
 
   return (
-    <div className={classes.container}>
+    <div className={`${classes.container} ${!showHome && classes.hide}`}>
       <div className={classes.title}>
         <h2>RECOMENDADOS</h2>
         <hr />

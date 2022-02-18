@@ -1,7 +1,7 @@
 import style from "./CardImage.module.css";
 
 export default function Category( props ){
-  const { title, image, onHide, setFiltered } = props;
+  const { title, image, setFiltered, onHide } = props;
 
   return(
     <div onClick={() => {onHide(false); setFiltered((title.toLowerCase()).normalize("NFD").replace(/[\u0300-\u036f]/g, ""))}} className={style.container}>

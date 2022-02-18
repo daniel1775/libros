@@ -19,9 +19,9 @@ function App() {
     <div className="App">
       <Navbar onHide={hide} />
       <Search setSearchText={setSearchText} onHide={hide} />
-      <Home showHome={showHome}>
+      <Home>
         <Category onHide={hide} setFiltered={setFiltered} />
-        <Recommend />
+        <Recommend showHome={showHome}/>
       </Home>
       <Filter showHome={showHome} searchText={searchText} filtered={filtered} />
       <Footer />
